@@ -69,7 +69,7 @@ Puedes utilizar los endpoints del servidor para obtener spreads y alertas de los
 - Para obtener el valor actual de la alerta: `GET /alert`
 - Para obtener el valor del spread y compararlo con la alerta, bastará en hacer un `Get /spread/{market_id}` y posteriormente un `Get /alert` y arrojará por consola si este valor de spread es mayor o menor al de la alerta.
 
-Recuerda iniciar el servidor con `node main.js` y luego realizar solicitudes a los endpoints especificados.
+Recuerda iniciar el servidor con `node server.js` y luego realizar solicitudes a los endpoints especificados.
 
 ## Detalles de los Tests de Llamadas a la API
 
