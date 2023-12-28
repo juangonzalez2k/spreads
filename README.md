@@ -2,6 +2,16 @@
 
 Este archivo describe las funciones de llamada a API proporcionadas y cómo se utilizan en conjunto en el código proporcionado en `main.js`.
 
+## Instalación y Ejecución
+
+Para ejecutar este proyecto localmente:
+
+1. Clona este repositorio.
+2. Instala las dependencias con `npm install`.
+3. Ejecuta el servidor con `node server.js`.
+
+El servidor se ejecutará en `http://localhost:3001`.
+
 ## Llamada a la API
 
 ### `llamadaApi(market_id)`
@@ -57,19 +67,9 @@ Puedes utilizar los endpoints del servidor para obtener spreads y alertas de los
 - Para obtener el spread de un mercado: `GET /spread/{market_id}`
 - Para obtener todos los spreads: `GET /spreads`
 - Para obtener el valor actual de la alerta: `GET /alert`
-- Para obtener el valor del spread y compararlo con la alerta, bastará en hacer un `Get /spread/{market_id} y posteriormente un Get /alert y arrojará por consola si este valor de spread es mayor o menor al de la alerta`
+- Para obtener el valor del spread y compararlo con la alerta, bastará en hacer un `Get /spread/{market_id}` y posteriormente un `Get /alert` y arrojará por consola si este valor de spread es mayor o menor al de la alerta.
 
 Recuerda iniciar el servidor con `node main.js` y luego realizar solicitudes a los endpoints especificados.
-
-## Instalación y Ejecución
-
-Para ejecutar este proyecto localmente:
-
-1. Clona este repositorio.
-2. Instala las dependencias con `npm install`.
-3. Ejecuta el servidor con `node main.js`.
-
-El servidor se ejecutará en `http://localhost:3001`.
 
 ## Detalles de los Tests de Llamadas a la API
 
@@ -79,8 +79,8 @@ Estos tests verifican el correcto funcionamiento de las llamadas a la API de ter
 
 ### Archivos de Prueba Relacionados
 
-- `main.test.js`: Contiene pruebas para la verificacion de datos obtenidos desde las Apis como las funciones que se encuentran en el archivo main.
-- `callApi.test.js`: Contiene las pruebas para el correcto llamado a cada Api
+- `main.test.js`: Contiene pruebas para la verificación de datos obtenidos desde las APIs como las funciones que se encuentran en el archivo `main.js`.
+- `callApi.test.js`: Contiene las pruebas para el correcto llamado a cada API.
 
 ### Ejecución de los Tests
 
@@ -88,7 +88,7 @@ Los tests de llamadas a la API verifican:
 
 - La correcta obtención de datos de la API externa.
 - Los códigos de estado de las respuestas.
-- La estructura y propiedades de los datos retornados por las API.
+- La estructura y propiedades de los datos retornados por las APIs.
 
 ### Estructura de los Tests
 
